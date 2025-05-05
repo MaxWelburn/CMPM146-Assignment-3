@@ -3,66 +3,68 @@ using System.Collections.Generic;
 
 public class Assignment3Maps : MapCollection
 {
-public void StudentMaps(int which)
-{
-        
-if (which == 3)
+    public void StudentMaps(int which)
+    {
+        if (which == 3)
 {
     List<Wall> outline = OutlineFromArray(new float[] {
-        100, 0, 100,
-        -100, 0, 100,
-        -100, 0, -100,
-        100, 0, -100
-    });
+    85, 0, 100,
+    -115, 0, 100,
+    -115, 0, 0,
+    -15, 0, 0,
+    -15, 0, -100,
+    85, 0, -100
+});
 
     EventBus.SetMap(outline);
     return;
 }
 
 
-if (which == 4)
+        if (which == 4)
+        {
+            List<Wall> outline = OutlineFromArray(new float[] {
+                100, 0, 100,
+                -100, 0, 100,
+                -100, 0, 0,
+                -25, 0, 0,
+                -50, 0, -100,
+                100, 0, -100
+            });
+
+            EventBus.SetMap(outline);
+            return;
+        }
+
+        if (which == 5)
 {
-    List<Wall> outline = OutlineFromArray(new float[] {
-        100, 0, 100,
-        -100, 0, 100,
-        -100, 0, 0,
-        -25, 0, 0,
-        -50, 0, -100,
-        100, 0, -100
-    });
+   List<Wall> outline = OutlineFromArray(new float[] {
+    150, 0, 25,
+    -150, 0, 25,
+    -150, 0, -75,
+    -50, 0, -75,
+    -50, 0, -25,
+    50, 0, -25,
+    50, 0, -75,
+    150, 0, -75,
+});
+
 
     EventBus.SetMap(outline);
     return;
 }
 
-
-if (which == 5)
-{
-    List<Wall> outline = OutlineFromArray(new float[] {
-        150, 0, 100,
-        50, 0, 100,
-        -50, 0, -100,
-        -150, 0, -100,
-        -50, 0, 100,
-        -150, 0, 100
-    });
-
-    EventBus.SetMap(outline);
-    return;
-}
-
-
-if (which == 6)
+       if (which == 6)
 {
     List<Wall> outline = OutlineFromArray(new float[] {
         200, 0, 200,
         -200, 0, 200,
-        -200, 0, -100,
-        -100, 0, -100,
+        -200, 0, 100,
         -100, 0, 100,
-        100, 0, 100,
+        -100, 0, -100,
         100, 0, -100,
-        200, 0, -100
+        100, 0, 100,
+        200, 0, 100
     });
 
     EventBus.SetMap(outline);
@@ -70,28 +72,24 @@ if (which == 6)
 }
 
 
-if (which == 7)
+  if (which == 7)
 {
     List<Wall> outline = OutlineFromArray(new float[] {
         -200, 0, 100,
-        -100, 0, 100,
-        -100, 0, 0,
-        0, 0, 0,
-        0, 0, -100,
-        100, 0, -100,
-        100, 0, 100,
         200, 0, 100,
-        200, 0, -200,
-        -200, 0, -200
+        200, 0, 0,
+        100, 0, 0,
+        100, 0, -100,
+        -100, 0, -100,
+        -100, 0, 0,
+        -200, 0, 0
     });
 
     EventBus.SetMap(outline);
     return;
 }
 
-
     }
-
 
     public override void Generate(int which)
     {
@@ -174,8 +172,6 @@ if (which == 7)
             return;
             
         }
-
-
 
         if (which == 8)
         {

@@ -2033,8 +2033,9 @@ GameObject:
   - component: {fileID: 1006009571}
   - component: {fileID: 1006009570}
   - component: {fileID: 1006009575}
-  - component: {fileID: 1006009576}
   - component: {fileID: 1006009577}
+  - component: {fileID: 1006009578}
+  - component: {fileID: 1006009579}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -2173,18 +2174,6 @@ MonoBehaviour:
   path: []
   label: {fileID: 0}
   arriv_dist: 10
---- !u!114 &1006009576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006009569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c05c49af36205a9448403ab957943b2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1006009577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2198,6 +2187,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breadcrumb: {fileID: 6849579715085819137, guid: a731c2a36b7bf29428513edd510e800a, type: 3}
+--- !u!114 &1006009578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006009569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 823787935aabf8d41afdbdcb4dba56f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steering: {fileID: 0}
+--- !u!114 &1006009579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006009569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3f598a15cdc66489e67228a5241f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1130499559
 GameObject:
   m_ObjectHideFlags: 0
